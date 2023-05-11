@@ -1,0 +1,37 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "sourceType": "module", // 设置为 "script" (默认) 或 "module"（如果你的代码是 ECMAScript 模块)
+    "impliedStrict": true, // 启动全局默认严格模式
+    "jsx": true, // 启用jsx
+    "ecmaVersion": "latest" // 启用最新的es
+  },
+  "plugins": [
+    "@typescript-eslint",
+    "react-hooks"
+  ],
+  "extends": [
+    "eslint:recommended",
+    "plugin:prettier/recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "rules": {
+    "semi": 2,
+    "no-var": "warn",
+    "@typescript-eslint/ban-types": 0, //允许使用Object最为类型定义
+    "@typescript-eslint/no-explicit-any": 0, // 允许使用any
+    "@typescript-eslint/no-non-null-assertion": 0, // 允许非空断言
+    "@typescript-eslint/explicit-module-boundary-types": 0, // 允许没有返回值
+    "@typescript-eslint/no-this-alias": 0, // 允许给this指定别名
+    "@typescript-eslint/no-empty-function": 0, // 空函数报error
+    "@typescript-eslint/no-var-requires": 0,
+    "@typescript-eslint/no-unused-vars": 2,
+    "no-debugger": 0,
+    "react-hooks/rules-of-hooks": "warn"// 检查 Hook 的规则
+  },
+  "env": {
+    "browser": true,
+    "node": true
+  }
+}

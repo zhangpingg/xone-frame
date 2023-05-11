@@ -1,0 +1,10 @@
+{
+  "isShowMenuAction": false,
+  "productTitle": "产品",
+  "urlPrefix": "xcvone",
+  "isDatePicker": true,
+  "isShowFooter": true,
+  "isShowSearchEngine": false,
+  "buttonVisible": true,
+  "CASLogin": "ipo"
+}

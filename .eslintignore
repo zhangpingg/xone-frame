@@ -1,0 +1,8 @@
+node_modules/*
+src/.umi/*
+dist/*
+static/*
+*.less
+*.css
+*.svg
+*.png

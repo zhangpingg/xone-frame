@@ -1,0 +1,33 @@
+// 子应用的最外面盒子
+.index-page-box {
+  position: absolute;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  min-width: 1186px;
+  padding: 8px;
+  background-color: var(--xc-body-background);
+  color: var(--xc-frame-text-color);
+}
+
+// 页面的公共样式，屏幕缩放时，表格高度跟随拉伸缩放
+.common-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: var(--xc-component-bg);
+  padding-top: 10px;
+  // 适用于表格自适应高度撑满剩余部分
+  .common-container-tableWrap {
+    flex: 1;
+    padding: 0 8px;
+    overflow: hidden;
+  }
+}
+
+// 交银
+.common-search-reset-btn-jy {
+  background: var(--self-btn-primary-bg);
+  color: var(--self-btn-primary-color);
+  border: 1px solid var(--xc-button-warp-bd-jy);
+}
